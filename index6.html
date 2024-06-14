@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+      
+        function update(arr, pos, value) {
+            let narr = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (i === pos) {
+                    narr.push(value);
+                } else {
+                    narr.push(arr[i]);
+                }
+            }
+            return narr;
+        }
+        let a = [10, 20, 30, 40, 50];
+        let p = 2; 
+        let v = 25; 
+        let ans = update(a, p, v);
+        console.log(ans);
+
+
+    </script>
+
+</body>
+
+</html>
